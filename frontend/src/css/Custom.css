@@ -1,0 +1,33 @@
+/* Animations */
+
+@keyframes slide-from-top {
+    0% { transform: translateY(-50%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes zoom-in {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@keyframes expand {
+    0% { width: 0% }
+    100% { width: 100% }
+}
+
+.slide-from-top { animation: slide-from-top 1.5s ease; }
+
+.zoom-in { animation: zoom-in 1.5s ease; }
+
+.expand { animation: expand 1.5s ease; }
+
+/* Transitions */
+
+.card-scale-on-hover {
+    transform: scale(1.0);
+    transition: transform 0.2s ease-out;
+}
+.card-scale-on-hover:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
